@@ -1,0 +1,110 @@
+@import url("https://fonts.googleapis.com/css2?family=Kumbh+Sans&display=swap");
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+@mixin center {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+body {
+  background: linear-gradient(hsl(273, 75%, 66%), hsl(240, 73%, 65%));
+  background-repeat: no-repeat;
+  background-size: 100%;
+  height: auto;
+  font-family: "Kumbh Sans", sans-serif;
+  font-size: 12px;
+  color: hsl(240, 6%, 50%);
+  padding: 150px 0 400px 0;
+
+  @include center;
+
+  justify-content: flex-start;
+}
+
+/* Main card */
+
+main {
+  background-color: #fff;
+  background-image: url(/images/bg-pattern-mobile.svg);
+  background-repeat: no-repeat;
+  background-position: top center;
+  width: 85%;
+  border-radius: 20px;
+  box-shadow: 0 25px 50px 0 rgb(81, 67, 146);
+
+  @include center;
+
+  #desktop-image {
+    display: none;
+  }
+
+  #mobile-image {
+    width: 75%;
+    display: block;
+    margin-top: -110px;
+  }
+
+  section {
+    @include center;
+
+    padding: 0 20px 50px 20px;
+
+    h1 {
+      margin: 60px 0 30px 0;
+      font-size: 2rem;
+    }
+
+    .questions {
+      border-bottom: 1px solid hsl(240, 5%, 91%);
+      padding: 15px 0;
+
+      .title {
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 10px;
+
+        h2 {
+          font-size: 0.9rem;
+          font-weight: 700;
+        }
+
+        img {
+          width: 10px;
+          height: 8px;
+
+          &:hover {
+            cursor: pointer;
+          }
+        }
+      }
+
+      p {
+        font-weight: 500;
+      }
+    }
+  }
+}
+
+.hide {
+  display: none;
+}
+
+/* Footer */
+
+footer {
+  margin-top: 15px;
+
+  a {
+    text-decoration: none;
+    color: #fff;
+  }
+}

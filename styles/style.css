@@ -1,1 +1,142 @@
-/* No CSS *//*# sourceMappingURL=style.css.map */
+@import url("https://fonts.googleapis.com/css2?family=Kumbh+Sans&display=swap");
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  background: -webkit-gradient(linear, left top, left bottom, from(#af67e9), to(#6565e7));
+  background: linear-gradient(#af67e9, #6565e7);
+  background-repeat: no-repeat;
+  background-size: 100%;
+  height: auto;
+  font-family: "Kumbh Sans", sans-serif;
+  font-size: 12px;
+  color: #787887;
+  padding: 150px 0 400px 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+}
+
+/* Main card */
+main {
+  background-color: #fff;
+  background-image: url(/images/bg-pattern-mobile.svg);
+  background-repeat: no-repeat;
+  background-position: top center;
+  width: 85%;
+  border-radius: 20px;
+  -webkit-box-shadow: 0 25px 50px 0 #514392;
+          box-shadow: 0 25px 50px 0 #514392;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+main #desktop-image {
+  display: none;
+}
+
+main #mobile-image {
+  width: 75%;
+  display: block;
+  margin-top: -110px;
+}
+
+main section {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 0 20px 50px 20px;
+}
+
+main section h1 {
+  margin: 60px 0 30px 0;
+  font-size: 2rem;
+}
+
+main section .questions {
+  border-bottom: 1px solid #e7e7e9;
+  padding: 15px 0;
+}
+
+main section .questions .title {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-bottom: 10px;
+}
+
+main section .questions .title h2 {
+  font-size: 0.9rem;
+  font-weight: 700;
+}
+
+main section .questions .title img {
+  width: 10px;
+  height: 8px;
+}
+
+main section .questions .title img:hover {
+  cursor: pointer;
+}
+
+main section .questions p {
+  font-weight: 500;
+}
+
+.hide {
+  display: none;
+}
+
+/* Footer */
+footer {
+  margin-top: 15px;
+}
+
+footer a {
+  text-decoration: none;
+  color: #fff;
+}
+/*# sourceMappingURL=style.css.map */
