@@ -56,30 +56,34 @@ main {
   section {
     @include center;
 
-    padding: 0 20px 50px 20px;
+    width: 100%;
+    padding: 0 15px 50px 15px;
 
     h1 {
       margin: 60px 0 30px 0;
       font-size: 2rem;
+      color: hsl(238, 29%, 16%);
     }
 
     .questions {
       border-bottom: 1px solid hsl(240, 5%, 91%);
-      padding: 15px 0;
+      padding-top: 15px;
+      width: 100%;
 
       .title {
         display: flex;
         justify-content: space-between;
-        margin-bottom: 10px;
+        margin-bottom: 15px;
 
         h2 {
           font-size: 0.9rem;
-          font-weight: 700;
+          font-weight: 900;
         }
 
         img {
           width: 10px;
           height: 8px;
+          margin-left: 10px;
 
           &:hover {
             cursor: pointer;
@@ -88,20 +92,30 @@ main {
       }
 
       p {
-        font-weight: 500;
+        display: none;
+      }
+
+      .show {
+        display: block;
+        margin-bottom: 15px;
       }
     }
   }
 }
 
-.hide {
-  display: none;
+.rotate {
+  transform: rotate(180deg);
+}
+
+.bold {
+  color: hsl(238, 29%, 16%);
 }
 
 /* Footer */
 
 footer {
   margin-top: 15px;
+  color: hsl(238, 29%, 16%);
 
   a {
     text-decoration: none;

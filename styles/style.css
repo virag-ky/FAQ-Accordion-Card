@@ -85,17 +85,20 @@ main section {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  padding: 0 20px 50px 20px;
+  width: 100%;
+  padding: 0 15px 50px 15px;
 }
 
 main section h1 {
   margin: 60px 0 30px 0;
   font-size: 2rem;
+  color: #1d1e35;
 }
 
 main section .questions {
   border-bottom: 1px solid #e7e7e9;
-  padding: 15px 0;
+  padding-top: 15px;
+  width: 100%;
 }
 
 main section .questions .title {
@@ -105,17 +108,18 @@ main section .questions .title {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  margin-bottom: 10px;
+  margin-bottom: 15px;
 }
 
 main section .questions .title h2 {
   font-size: 0.9rem;
-  font-weight: 700;
+  font-weight: 900;
 }
 
 main section .questions .title img {
   width: 10px;
   height: 8px;
+  margin-left: 10px;
 }
 
 main section .questions .title img:hover {
@@ -123,16 +127,27 @@ main section .questions .title img:hover {
 }
 
 main section .questions p {
-  font-weight: 500;
+  display: none;
 }
 
-.hide {
-  display: none;
+main section .questions .show {
+  display: block;
+  margin-bottom: 15px;
+}
+
+.rotate {
+  -webkit-transform: rotate(180deg);
+          transform: rotate(180deg);
+}
+
+.bold {
+  color: #1d1e35;
 }
 
 /* Footer */
 footer {
   margin-top: 15px;
+  color: #1d1e35;
 }
 
 footer a {
