@@ -36,6 +36,16 @@ body {
           justify-content: flex-start;
 }
 
+@media (min-width: 1100px) {
+  body {
+    height: 100vh;
+    padding: 0;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+}
+
 /* Main card */
 main {
   background-color: #fff;
@@ -61,14 +71,70 @@ main {
           align-items: center;
 }
 
-main #desktop-image {
-  display: none;
+@media (min-width: 1100px) {
+  main {
+    width: 1200px;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    background-image: url(/images/bg-pattern-desktop.svg);
+    background-repeat: no-repeat;
+    background-position: -510px -250px;
+    position: relative;
+  }
 }
 
-main #mobile-image {
+main #img-container {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+@media (min-width: 1100px) {
+  main #img-container {
+    height: 100%;
+    background-image: url(/images/illustration-woman-online-desktop.svg);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-position: -120px;
+  }
+}
+
+main #img-container #mobile-image {
   width: 75%;
   display: block;
   margin-top: -110px;
+}
+
+@media (min-width: 1100px) {
+  main #img-container #mobile-image {
+    display: none;
+  }
+}
+
+main #img-container #box {
+  display: none;
+}
+
+@media (min-width: 1100px) {
+  main #img-container #box {
+    display: block;
+    position: absolute;
+    top: 250px;
+    left: -100px;
+  }
 }
 
 main section {
@@ -89,16 +155,37 @@ main section {
   padding: 0 15px 50px 15px;
 }
 
+@media (min-width: 1100px) {
+  main section {
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+    padding: 80px 80px 80px 0;
+  }
+}
+
 main section h1 {
   margin: 60px 0 30px 0;
   font-size: 2rem;
   color: #1d1e35;
 }
 
+@media (min-width: 1100px) {
+  main section h1 {
+    margin-top: 0;
+  }
+}
+
 main section .questions {
   border-bottom: 1px solid #e7e7e9;
   padding-top: 15px;
   width: 100%;
+}
+
+@media (min-width: 1100px) {
+  main section .questions {
+    padding-top: 25px;
+  }
 }
 
 main section .questions .title {
@@ -111,15 +198,39 @@ main section .questions .title {
   margin-bottom: 15px;
 }
 
+@media (min-width: 1100px) {
+  main section .questions .title {
+    margin-bottom: 25px;
+  }
+}
+
 main section .questions .title h2 {
   font-size: 0.9rem;
   font-weight: 900;
+}
+
+@media (min-width: 1100px) {
+  main section .questions .title h2 {
+    font-size: 1rem;
+  }
+}
+
+main section .questions .title h2:hover {
+  color: #f47c57;
+  cursor: pointer;
 }
 
 main section .questions .title img {
   width: 10px;
   height: 8px;
   margin-left: 10px;
+}
+
+@media (min-width: 1100px) {
+  main section .questions .title img {
+    width: 15px;
+    height: 12px;
+  }
 }
 
 main section .questions .title img:hover {
@@ -135,6 +246,13 @@ main section .questions .show {
   margin-bottom: 15px;
 }
 
+@media (min-width: 1100px) {
+  main section .questions .show {
+    font-size: 0.9rem;
+    margin-top: -20px;
+  }
+}
+
 .rotate {
   -webkit-transform: rotate(180deg);
           transform: rotate(180deg);
@@ -148,6 +266,12 @@ main section .questions .show {
 footer {
   margin-top: 15px;
   color: #1d1e35;
+}
+
+@media (min-width: 1100px) {
+  footer {
+    margin-top: 50px;
+  }
 }
 
 footer a {

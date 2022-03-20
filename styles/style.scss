@@ -1,19 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Kumbh+Sans&display=swap");
-
-*,
-*::before,
-*::after {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-
-@mixin center {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-}
+@import "base";
 
 body {
   background: linear-gradient(hsl(273, 75%, 66%), hsl(240, 73%, 65%));
@@ -28,6 +13,12 @@ body {
   @include center;
 
   justify-content: flex-start;
+
+  @include media-md {
+    height: 100vh;
+    padding: 0;
+    justify-content: center;
+  }
 }
 
 /* Main card */
@@ -43,14 +34,48 @@ main {
 
   @include center;
 
-  #desktop-image {
-    display: none;
+  @include media-md {
+    width: 1200px;
+    flex-direction: row;
+    background-image: url(/images/bg-pattern-desktop.svg);
+    background-repeat: no-repeat;
+    background-position: -510px -250px;
+    position: relative;
   }
 
-  #mobile-image {
-    width: 75%;
-    display: block;
-    margin-top: -110px;
+  #img-container {
+    width: 100%;
+
+    @include center;
+
+    @include media-md {
+      height: 100%;
+      background-image: url(/images/illustration-woman-online-desktop.svg);
+      background-repeat: no-repeat;
+      background-size: 100%;
+      background-position: -120px;
+    }
+
+    #mobile-image {
+      width: 75%;
+      display: block;
+      margin-top: -110px;
+
+      @include media-md {
+        display: none;
+      }
+    }
+
+    #box {
+      display: none;
+
+      @include media-md {
+        display: block;
+        position: absolute;
+        top: 250px;
+        left: -100px;
+      }
+    }
   }
 
   section {
@@ -59,10 +84,19 @@ main {
     width: 100%;
     padding: 0 15px 50px 15px;
 
+    @include media-md {
+      align-items: flex-start;
+      padding: 80px 80px 80px 0;
+    }
+
     h1 {
       margin: 60px 0 30px 0;
       font-size: 2rem;
       color: hsl(238, 29%, 16%);
+
+      @include media-md {
+        margin-top: 0;
+      }
     }
 
     .questions {
@@ -70,20 +104,42 @@ main {
       padding-top: 15px;
       width: 100%;
 
+      @include media-md {
+        padding-top: 25px;
+      }
+
       .title {
         display: flex;
         justify-content: space-between;
         margin-bottom: 15px;
 
+        @include media-md {
+          margin-bottom: 25px;
+        }
+
         h2 {
           font-size: 0.9rem;
           font-weight: 900;
+
+          @include media-md {
+            font-size: 1rem;
+          }
+
+          &:hover {
+            color: hsl(14, 88%, 65%);
+            cursor: pointer;
+          }
         }
 
         img {
           width: 10px;
           height: 8px;
           margin-left: 10px;
+
+          @include media-md {
+            width: 15px;
+            height: 12px;
+          }
 
           &:hover {
             cursor: pointer;
@@ -98,6 +154,11 @@ main {
       .show {
         display: block;
         margin-bottom: 15px;
+
+        @include media-md {
+          font-size: 0.9rem;
+          margin-top: -20px;
+        }
       }
     }
   }
@@ -116,6 +177,10 @@ main {
 footer {
   margin-top: 15px;
   color: hsl(238, 29%, 16%);
+
+  @include media-md {
+    margin-top: 50px;
+  }
 
   a {
     text-decoration: none;
