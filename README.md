@@ -23,7 +23,7 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
+- Solution URL: [https://www.frontendmentor.io/solutions/faq-accordion-card-BJ0t2NoFB](https://www.frontendmentor.io/solutions/faq-accordion-card-BJ0t2NoFB)
 - Live Site URL: [https://virag-ky.github.io/FAQ-Accordion-Card/](https://virag-ky.github.io/FAQ-Accordion-Card/)
 
 ## My process
